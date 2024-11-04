@@ -7,18 +7,18 @@ pipeline {
                 git url: 'https://github.com/BhavanaSB-13/practise.git', branch: 'main'
             }
         }
-        stage('Build') {
+        stage('Compile') {
             steps {
                 echo 'Building the application...'
-                bat 'mvn clean compile'
+                bat 'javac Add.java Calci.java'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                bat 'mvn test'
-            }
-         }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests...'
+        //         bat 'java '
+        //     }
+        //  }
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
