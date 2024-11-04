@@ -1,15 +1,15 @@
 class Calci {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+       
+        
+        int a = 12
+        int b =13
 
         System.out.println(a+b);
         System.out.println(a-b);
         System.out.println(a*b);
         System.out.println(a/b);
 
-        sc.close();
+       
     }
 }
