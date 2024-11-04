@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/BhavanaSB-13/practise', branch: 'main'
+                git url: 'git@github.com:BhavanaSB-13/practise', branch: 'main'
             }
         }
         stage('Build') {
