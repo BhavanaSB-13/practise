@@ -10,7 +10,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Building the application...'
-                bat 'javac Add.java Calci.java'
+                bat 'javac Calci.java'
             }
         }
         // stage('Test') {
