@@ -13,7 +13,6 @@ pipeline {
                 bat 'javac Calci.java'
             }
         }
-       /
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
