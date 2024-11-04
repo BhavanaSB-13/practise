@@ -1,6 +1,6 @@
 import java.util.*;;
 
-class Add {
+class Calci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter two numbers");
