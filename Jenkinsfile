@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'java -cp . org.junit.runner.JUnitCore CalciTest'
+                bat 'java -cp . org.junit.runner.JUnitCore CalciTest.java'
             }
         }
         stage('Deploy') {
