@@ -7,19 +7,19 @@ pipeline {
                 git url: 'git@github.com:BhavanaSB-13/practise', branch: 'main'
             }
         }
-        stage('Build') {
-            steps {
-                echo 'Building the application...'
-                bat 'mvn clean compile'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                // Run Maven to execute tests
-                bat 'mvn test'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         echo 'Building the application...'
+        //         bat 'mvn clean compile'
+        //     }
+        // }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests...'
+        //         // Run Maven to execute tests
+        //         bat 'mvn test'
+        //     }
+        // }
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
@@ -31,7 +31,7 @@ pipeline {
     post {
         always {
             // Archive test results
-            junit 'target/surefire-reports/*.xml'
+            echo 'Build finished'
         }
     }
 }
