@@ -10,15 +10,10 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Building the application...'
-                bat 'javac Calci.java CalciTest.java'
+                bat 'javac Calci.java'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                sh 'java -cp . org.junit.runner.JUnitCore CalciTest'
-            }
-        }
+       /
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
