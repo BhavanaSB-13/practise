@@ -25,7 +25,7 @@ class Calculator{
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        Add calculator = new Add();
+        Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(a, b));
         System.out.println("Subtraction: " + calculator.subtract(a, b));
         System.out.println("Multiplication: " + calculator.multiply(a, b));
