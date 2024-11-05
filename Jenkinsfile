@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
-               sh 'java -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalciTest'
+               bat 'java -cp .:junit-4.13.2.jar:hamcrest-core-1.3.jar org.junit.runner.JUnitCore CalciTest'
             }
         }
         stage('Deploy') {
